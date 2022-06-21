@@ -4,6 +4,7 @@ using Ninject.Web.AspNetCore.Hosting;
 using Ninject.Web.Common.SelfHost;
 using System;
 using System.Linq;
+using Microsoft.AspNetCore.Hosting.Server;
 
 namespace SampleApplication_AspNetCore
 {
@@ -37,6 +38,7 @@ namespace SampleApplication_AspNetCore
 
 				case "IIS":
 					hostConfiguration.UseIIS();
+					hostConfiguration.UseKestrel();
 					break;
 
 				case "IISExpress":

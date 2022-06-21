@@ -10,7 +10,6 @@ namespace Ninject.Web.AspNetCore.Hosting
 			config.ConfigureHostingModel(builder =>
 			{
 				builder
-					.UseIIS()
 					.UseIISIntegration();
 			});
 			return config;

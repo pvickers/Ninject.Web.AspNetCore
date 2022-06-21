@@ -24,7 +24,7 @@ namespace Ninject.Web.AspNetCore.Hosting
 		{
 			var mvcBuilder = services.AddMvc()
 #if NETCOREAPP2_2 || NETSTANDARD2_0
-				.SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
+				.SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
 #else
 				.SetCompatibilityVersion(CompatibilityVersion.Version_3_0);
 #endif
